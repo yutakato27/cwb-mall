@@ -1,0 +1,11 @@
+.mapa {
+    box-sizing: border-box;
+    border: 5px solid #ded7ca;
+    border-radius: 8px;
+    box-shadow: 3px 5px 8px #00000033;
+    object-fit: cover;
+    width: 400px;
+    max-width: 200%;
+    height: auto;
+    flex-shrink: 0;
+}

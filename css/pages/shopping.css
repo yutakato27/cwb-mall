@@ -1,0 +1,33 @@
+.fest-cima{
+    display: flex;
+}
+.img-fest {
+    box-sizing: border-box;
+    border: 5px solid #ded7ca;
+    border-radius: 8px;
+    box-shadow: 3px 5px 8px #00000033;
+    width: 2000px;
+    max-width: 100%;
+    height: auto;
+    margin: 50px 0 0 90px;
+}
+.texto-fest{
+    color: var(--color-text);
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    margin: 80px 0 0 150px;
+    align-items: center;
+}
+.nome-fest {
+    margin: 80px 0 0 150px;
+}
+.fest-cima {
+    margin: 0 0 100px 0;
+}
+.fest-baixo {
+    color: var(--color-text);
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    margin: 80px 0 100px 150px;
+    align-items: center;
+}

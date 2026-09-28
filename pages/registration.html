@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro | CWB Malls</title>
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/pages/registration.css">
+    </head>
+    <body>
+        <!-- Trocar pelo header padrão -->
+        <header class="site-header">
+            <div class="container">
+                <img src="../assets/logo-cwb-mall.png" alt="CWB Malls" style="height:40px;">
+                <span>Shoppings de Curitiba</span>
+            </div>
+        </header>
+
+        <main class="container registration-page">
+            <header class="registration-header">
+                <h1>Faça parte do CWB Malls</h1>
+                <p>Cadastre um shopping, uma loja ou um produto.</p>
+            </header>
+
+            <nav class="registration-menu" aria-label="Tipos de cadastro">
+                <a href="#shopping">Shopping</a>
+                <a href="#loja">Loja</a>
+                <a href="#produto">Produto</a>
+            </nav>
+
+            <p class="form-note">Os campos com * são obrigatórios.</p>
+            <p class="form-note" id="submission-note">O envio dos cadastros estará disponível em breve.</p>
+
+            <section class="registration-section" id="shopping">
+                <h2>Cadastrar shopping</h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-field full">
+                            <label for="shopping-name">Nome do shopping *</label>
+                            <input id="shopping-name" name="shopping-name" type="text" placeholder="Ex.: Palladium" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="shopping-address">Endereço *</label>
+                            <input id="shopping-address" name="shopping-address" type="text" placeholder="Rua, número e complemento" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="shopping-neighborhood">Bairro *</label>
+                            <input id="shopping-neighborhood" name="shopping-neighborhood" type="text" placeholder="Bairro" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="shopping-opening">Horário de abertura *</label>
+                            <input id="shopping-opening" name="shopping-opening" type="text" placeholder="Ex.: Seg–Sáb: 10h–22h" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="shopping-phone">Telefone / Central</label>
+                            <input id="shopping-phone" name="shopping-phone" type="tel" placeholder="(41) 99999-9999">
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="shopping-description">Sobre o shopping *</label>
+                            <textarea id="shopping-description" name="shopping-description" placeholder="Descreva o shopping, seus diferenciais e principais informações." required></textarea>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="shopping-image">Imagem principal *</label>
+                            <input id="shopping-image" name="shopping-image" type="file" accept="image/*" required>
+                            <p>Use uma imagem horizontal de boa qualidade para a página do shopping.</p>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="shopping-instagram">Instagram</label>
+                            <input id="shopping-instagram" name="shopping-instagram" type="text" placeholder="@perfil">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="shopping-site">Site</label>
+                            <input id="shopping-site" name="shopping-site" type="url" placeholder="https://">
+                        </div>
+                    </div>
+
+                    <button type="submit" disabled aria-describedby="submission-note">Enviar cadastro do shopping</button>
+                </form>
+            </section>
+
+            <section class="registration-section" id="loja">
+                <h2>Cadastrar loja</h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-field full">
+                            <label for="store-name">Nome da loja *</label>
+                            <input id="store-name" name="store-name" type="text" placeholder="Nome do estabelecimento" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="store-shopping">Shopping *</label>
+                            <select id="store-shopping" name="store-shopping" required>
+                                <option value="" selected disabled>Selecione um shopping</option>
+                                <option value="palladium">Palladium</option>
+                                <option value="mueller">Mueller</option>
+                                <option value="parkshopping">ParkShopping Barigüi</option>
+                                <option value="jockey">Jockey Plaza</option>
+                                <option value="curitiba">Shopping Curitiba</option>
+                                <option value="patio-batel">Pátio Batel</option>
+                                <option value="crystal">Crystal</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="store-category">Segmento *</label>
+                            <select id="store-category" name="store-category" required>
+                                <option value="" selected disabled>Selecione um segmento</option>
+                                <option>Moda e Vestuário</option>
+                                <option>Calçados e Acessórios</option>
+                                <option>Eletrônicos e Informática</option>
+                                <option>Alimentação</option>
+                                <option>Serviços</option>
+                                <option>Saúde e Beleza</option>
+                                <option>Livraria e Papelaria</option>
+                                <option>Esportes</option>
+                                <option>Casa e Decoração</option>
+                                <option>Infantil e Brinquedos</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="store-phone">Telefone / WhatsApp</label>
+                            <input id="store-phone" name="store-phone" type="tel" placeholder="(41) 99999-9999">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="store-floor">Piso / Localização na planta</label>
+                            <input id="store-floor" name="store-floor" type="text" placeholder="Ex.: Piso L1, loja 142">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="store-instagram">Instagram</label>
+                            <input id="store-instagram" name="store-instagram" type="text" placeholder="@perfil">
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="store-description">Informações da loja *</label>
+                            <textarea id="store-description" name="store-description" placeholder="Conte um pouco sobre a loja." required></textarea>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="store-image">Imagem principal *</label>
+                            <input id="store-image" name="store-image" type="file" accept="image/*" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" disabled aria-describedby="submission-note">Enviar cadastro da loja</button>
+                </form>
+            </section>
+
+            <section class="registration-section" id="produto">
+                <h2>Cadastrar produto</h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-field full">
+                            <label for="product-name">Nome do produto *</label>
+                            <input id="product-name" name="product-name" type="text" placeholder="Nome do produto" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="product-store">Loja *</label>
+                            <select id="product-store" name="product-store" required>
+                                <option value="" selected disabled>Selecione uma loja</option>
+                                <option value="store-1">Loja 1 (exemplo)</option>
+                                <option value="store-2">Loja 2 (exemplo)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="product-price">Preço *</label>
+                            <input id="product-price" name="product-price" type="number" min="0" step="0.01" placeholder="0,00" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="product-category">Categoria *</label>
+                            <select id="product-category" name="product-category" required>
+                                <option value="" selected disabled>Selecione</option>
+                                <option>Roupas</option>
+                                <option>Calçados</option>
+                                <option>Eletrônicos</option>
+                                <option>Alimentos</option>
+                                <option>Beleza e Cuidados</option>
+                                <option>Casa e Decoração</option>
+                                <option>Brinquedos</option>
+                                <option>Esportes</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="product-description">Informações do produto *</label>
+                            <textarea id="product-description" name="product-description" placeholder="Descreva o produto, principais características e diferenciais." required></textarea>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="product-image">Foto do produto *</label>
+                            <input id="product-image" name="product-image" type="file" accept="image/*" required>
+                            <p>Escolha uma imagem clara e bem enquadrada do produto.</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" disabled aria-describedby="submission-note">Enviar cadastro do produto</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Trocar pelo footer padrão -->
+        <footer class="site-footer">CWB Malls · Curitiba</footer>
+    </body>
+</html>
+

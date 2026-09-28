@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    background-color: var(--color-terracotta);
+    align-items: center;
+    gap: 840px;
+    padding: 20px 18px 18px 20px;
+    height: 70px;
+}
+
+.logo-h img {
+    width: 178;
+    height: 90px;
+    margin: 0 0 0 10px;
+}
+
+.texto-h  {
+    color: var(--color-text);
+    font-size: 9px;
+    letter-spacing: 0.3px;
+    gap: 20px;
+}
+
+.perfil-h img {
+    margin-top: 2%;
+    margin-left: 18%;
+    width: 45px;
+    height: 45px;
+}
+.direita-h {
+    display: flex;
+}

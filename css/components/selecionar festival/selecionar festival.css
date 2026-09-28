@@ -1,0 +1,8 @@
+.selecionar-fest {
+    padding: 10px 14px;
+    background: var(--color-surface);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 3px 5px 8px #00000033;
+    font-size: 13px;
+}

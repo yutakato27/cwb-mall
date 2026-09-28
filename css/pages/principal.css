@@ -1,0 +1,41 @@
+.sobre {
+    display: flex;
+    gap: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin: 90px 0 0 0;
+
+}
+.texto-sobre {
+    color: var(--color-text);
+    font-size: 19px;
+    letter-spacing: 0.3px;
+
+}
+.img-sobre {
+    margin: 0 40px 0 0;
+}
+.sobre-texto-grande {
+    margin: 0 0 20px 0;
+}
+.cima {
+    color: var(--color-text);
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    margin: 80px 0 80px 80px;
+}
+.mapa {
+    margin: 250px 0 100px 300px;
+}
+.meio-b {
+    display: flex;
+}
+.explorar-mais {
+    display: flex;
+}
+.shoppings-destaque, .Festivais-do-Momento {
+    color: var(--color-text);
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    margin: 80px 0 0 450px;
+}

@@ -1,0 +1,220 @@
+﻿.site-header {
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-block: 18px;
+}
+
+.site-name {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.site-header .container > :last-child {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.registration-page {
+    max-width: 860px;
+    padding: 40px 0;
+}
+
+.registration-header {
+    margin-bottom: 28px;
+}
+
+.registration-header h1 {
+    margin: 0 0 12px;
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: clamp(28px, 5vw, 38px);
+    line-height: 1.2;
+}
+
+.registration-header p {
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+.registration-section {
+    margin-bottom: 28px;
+    scroll-margin-top: 24px;
+    padding: 28px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background-color: var(--color-surface);
+}
+
+.form-note {
+    margin: 0 0 16px;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.registration-section h2 {
+    margin: 0 0 24px;
+    font-family: var(--font-heading);
+    font-size: 25px;
+}
+
+.registration-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.registration-menu a {
+    padding: 8px 18px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-surface);
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.registration-menu a:hover {
+    border-color: var(--color-primary);
+}
+
+.registration-section fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.registration-section legend {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+
+.form-field .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    accent-color: var(--color-primary);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 6px;
+}
+
+.form-field.full {
+    grid-column: 1 / -1;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background-color: white;
+    color: var(--color-text);
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible,
+.registration-section button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.form-field p {
+    color: var(--color-text-secondary);
+    font-size: 13px;
+}
+
+.registration-section button {
+    margin-top: 24px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--color-terracotta-dark);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.registration-section button:hover:not(:disabled) {
+    background-color: var(--color-primary-dark);
+}
+
+.registration-section button:disabled {
+    cursor: not-allowed;
+}
+
+.site-footer {
+    padding: 0 20px 28px;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .site-header .container {
+        flex-wrap: wrap;
+        gap: 4px 16px;
+    }
+
+    .registration-page {
+        padding-block: 32px;
+    }
+
+    .registration-section {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-section button {
+        width: 100%;
+    }
+}
+
+
