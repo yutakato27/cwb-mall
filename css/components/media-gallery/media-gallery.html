@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de fotos</title>
+    <link rel="stylesheet" href="media-gallery.css">
+    <style>
+        body {
+            margin: 30px;
+            background-color: #f7f2e8;
+        }
+    </style>
+</head>
+<body>
+    <!-- criando os radios (seleção unica), logica de id p seleção de foto com click funcionar. O check significa q por padrão a foto1 vai ser a selecionada -->
+    <div class="media-gallery">
+        <input type="radio" name="galeria" id="foto1" class="opcao1" checked>
+        <input type="radio" name="galeria" id="foto2" class="opcao2">
+        <input type="radio" name="galeria" id="foto3" class="opcao3">
+    
+        <!-- imagens de exemplo -->
+        <div class="foto-principal">
+            <img class="imagem1" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Carne com acompanhamentos">
+            <img class="imagem2" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Salada de vegetais">
+            <img class="imagem3" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600" alt="Bolo com frutas vermelhas">
+        </div>
+
+        <!-- mini quadradinhos que ficam na lateral com previe das outras fotos -->
+        <div class="miniaturas">
+            <label for="foto1">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=150" alt="Ver foto da carne">
+            </label>
+            <label for="foto2">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=150" alt="Ver foto da salada">
+            </label>
+            <label for="foto3">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=150" alt="Ver foto do bolo">
+            </label>
+        </div>
+    </div>
+</body>
+</html>
