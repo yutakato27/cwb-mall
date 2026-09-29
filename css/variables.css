@@ -1,37 +1,24 @@
 :root {
-  /* === Paleta principal — CWB Malls === */
-
-  /* Azul profundo — cor institucional, header, footer, nav */
   --color-primary: #1B3A6B;
   --color-primary-dark: #122851;
-
-  /* Dourado — botões principais, destaques, CTAs */
   --color-secondary: #C9971A;
   --color-secondary-dark: #A87C14;
 
-  /* Aliases para compatibilidade com arquivos existentes */
   --color-terracotta: #C9971A;
   --color-terracotta-dark: #A87C14;
 
-  /* Dourado claro — estrelas, badges, ícones especiais */
   --color-accent: #F0C040;
 
-  /* Fundos */
-  --color-background: #F4F6F9;   /* cinza-azulado leve — fundo das páginas */
-  --color-surface: #FFFFFF;       /* branco puro — cards e painéis */
+  --color-background: #F4F6F9;   
+  --color-surface: #FFFFFF;       
 
-  /* Textos */
-  --color-text: #1A1A2E;          /* quase preto com tom azul — legível e elegante */
-  --color-text-secondary: #5A6380; /* cinza-azulado médio — textos secundários */
+  --color-text: #1A1A2E;         
+  --color-text-secondary: #5A6380; 
+  --color-border: #D8DDE8;     
 
-  /* Bordas */
-  --color-border: #D8DDE8;        /* cinza frio leve */
-
-  /* Tipografia */
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Inter", Arial, sans-serif;
 
-  /* Utilitários */
   --radius-sm: 8px;
   --radius-md: 14px;
   --shadow-card: 0 4px 16px rgba(27, 58, 107, 0.10);
