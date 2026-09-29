@@ -94,8 +94,7 @@ Exemplo:
 
 ```css
 --color-secondary: #C9971A;
---color-terracotta: #C9971A; /* alias para compatibilidade */
-```
+--color-terracotta: #C9971A; 
 
 ---
 
@@ -107,7 +106,7 @@ Usar principalmente em hover.
 
 ```css
 --color-secondary-dark: #A87C14;
---color-terracotta-dark: #A87C14; /* alias para compatibilidade */
+--color-terracotta-dark: #A87C14;
 ```
 
 Exemplo:
