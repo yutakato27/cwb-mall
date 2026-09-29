@@ -133,6 +133,25 @@
     grid-column: 1 / -1;
 }
 
+.form-field.full input {
+
+    display: none;
+
+}
+
+.botao-arquivo {
+
+    margin-top: 24px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--color-terracotta-dark);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
 .form-field label {
     font-size: 14px;
     font-weight: 600;
@@ -216,5 +235,3 @@
         width: 100%;
     }
 }
-
-
