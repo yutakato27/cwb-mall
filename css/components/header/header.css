@@ -4,7 +4,7 @@
     align-items: center;
     gap: 840px;
     padding: 20px 18px 18px 20px;
-    height: 70px;
+    height: 100px;
 }
 
 .logo-h img {
@@ -28,6 +28,7 @@
 }
 .direita-h {
     display: flex;
+    font-size: 10px;
 }
 
 .menu{
