@@ -1,4 +1,3 @@
-/* container geral da galeria, deixa a foto principal e as miniaturas lado a lado */
 .media-gallery {
     display: flex;
     align-items: center;
@@ -8,7 +7,6 @@
     position: relative;
 }
 
-/* esconde os radio buttons, eles só são usados pra controlar qual imagem está selecionada */
 .media-gallery input {
     position: absolute;
     opacity: 0;
@@ -16,13 +14,11 @@
     height: 1px;
 }
 
-/* area da foto principal, ocupa o espaço que sobra dentro da galeria */
 .media-gallery .foto-principal {
     flex: 1;
     min-width: 0;
 }
 
-/* configura as imagens principais, deixa todas escondidas até uma opção ser selecionada */
 .media-gallery .foto-principal img {
     display: none;
     box-sizing: border-box;
@@ -34,7 +30,6 @@
     box-shadow: 3px 5px 8px #00000033;
 }
 
-/* organiza as miniaturas em uma coluna ao lado da foto principal */
 .media-gallery .miniaturas {
     display: flex;
     flex-direction: column;
@@ -42,7 +37,6 @@
     width: 22%;
 }
 
-/* deixa as miniaturas quadradas e ajusta a imagem sem distorcer usando object-fit */
 .media-gallery .miniaturas img {
     display: block;
     width: 100%;
@@ -52,18 +46,15 @@
     box-shadow: 3px 5px 8px #00000033;
 }
 
-/* quando passa o mouse em uma miniatura, mostra uma borda pra indicar que ela é clicável */
 .media-gallery .miniaturas img:hover {
     outline: 2px solid #3f5a45;
 }
 
-/* mostra um contorno quando a galeria é acessada pelo teclado, usando o focus-visible */
 .media-gallery input:focus-visible ~ .miniaturas {
     outline: 2px solid #3f5a45;
     outline-offset: 4px;
 }
 
-/* :checked identifica o radio selecionado e o ~ procura a foto-principal que vem depois dele */
 .media-gallery .opcao1:checked ~ .foto-principal .imagem1,
 .media-gallery .opcao2:checked ~ .foto-principal .imagem2,
 .media-gallery .opcao3:checked ~ .foto-principal .imagem3 {

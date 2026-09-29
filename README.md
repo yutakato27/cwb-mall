@@ -114,4 +114,9 @@ The objective of Curitiba Malls is to create a simple and organized platform whe
 
 ## Team
 
-Developed as an academic web development project.
+Developed by:
+
+* Anna Guerra
+* André de Paula
+* Sofia Camillo
+* João Yutaka
