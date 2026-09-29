@@ -29,3 +29,12 @@
 .direita-h {
     display: flex;
 }
+
+.menu{
+    height: 30px;
+    max-height: 50px;
+    width: 100%;
+    background-color: var(--color-background);
+    border: 5px;
+    border-color: var(--color-border);
+}
